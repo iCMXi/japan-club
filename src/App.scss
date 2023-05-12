@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+:root {
+  --shadow: 0px 0px 10px rgb(135, 130, 130);
+  --inset-shadow: black 2px 2px 10px 0 inset;
+
+  //colors material 100
+  --red: #f44336;
+  --green: #4caf50;
+  --yellow: #ffeb3b;
+  --blue: #2196f3;
+  --black: rgb(20, 20, 20);
+  --white: rgb(230, 230, 230);
+
+  --primary-font: "Nunito", sans-serif;
+}
+
+html,
+body {
+  margin: 20px;
+  font-family: var(--primary-font);
+  overscroll-behavior: contain;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+}
+
+:root {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
