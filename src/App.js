@@ -5,7 +5,7 @@ import Test from "./test";
 
 import Home from "./layers/home";
 
-import Bottom_bar from "./components/bottom_bar";
+import BottomBar from "./components/bottom_bar";
 
 import { motion } from "framer-motion";
 
@@ -29,7 +29,7 @@ function App() {
         <Pages />
       </BrowserRouter>
 
-      <Bottom_bar></Bottom_bar>
+      <BottomBar />
     </motion.div>
   );
 }
