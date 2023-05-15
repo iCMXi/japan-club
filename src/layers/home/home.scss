@@ -1,0 +1,17 @@
+.home {
+  .title {
+    font-size: 20px;
+    .letter {
+      display: inline-block;
+      padding-right: 5px;
+    }
+  }
+  .logo {
+    position: absolute;
+    width: 200px;
+    top: 50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+}

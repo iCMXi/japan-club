@@ -1,6 +1,5 @@
-https://japan-club.netlify.app/
-
 **VSCODE**
+
 command palette > gitcl > repo url > dev branch
 https://github.com/rmistr00/japan-club/tree/dev
 
@@ -8,6 +7,4 @@ https://github.com/rmistr00/japan-club/tree/dev
 
 "npm run" to launch in browser (inspect)
 
-**using node-sass**
-css -> scss
-.css files becomes .scss
+https://japan-club.netlify.app/

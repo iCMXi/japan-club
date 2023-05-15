@@ -5,6 +5,10 @@ import Test from "./test";
 
 import Home from "./layers/home";
 
+import Bottom_bar from "./components/bottom_bar";
+
+import { motion } from "framer-motion";
+
 const Pages = () => {
   return (
     <Routes>
@@ -16,11 +20,17 @@ const Pages = () => {
 
 function App() {
   return (
-    <div className="App">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="App"
+    >
       <BrowserRouter>
         <Pages />
       </BrowserRouter>
-    </div>
+
+      <Bottom_bar></Bottom_bar>
+    </motion.div>
   );
 }
 
