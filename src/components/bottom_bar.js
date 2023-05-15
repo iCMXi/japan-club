@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import { motion } from "framer-motion";
 
-function Bottom_bar() {
+function BottomBar() {
   return (
     <div className="bottom-bar">
       <div className="links">
@@ -13,7 +13,7 @@ function Bottom_bar() {
           <motion.div
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.2 * n }}
+            transition={{ delay: 0.2 * (1 + n) }}
             className="link"
             key={x.id}
           >
@@ -25,4 +25,4 @@ function Bottom_bar() {
   );
 }
 
-export default Bottom_bar;
+export default BottomBar;
