@@ -5,25 +5,19 @@ import { useEffect } from "react";
 
 import { motion } from "framer-motion";
 
+import Info from "../../components/info";
+
+import BottomBar from "../../components/bottom_bar";
+
 function Home() {
-  let string = "Welcome to Japan Club!".split("");
-
-  string = string.map((c, n) => (
-    <motion.div
-      initial={{ x: 20, opacity: 0, y: 10 }}
-      animate={{ x: 0, opacity: 1, y: 0 }}
-      transition={{ delay: 0.1 * n, repeat: Infinity, repeatDelay: 2 }}
-      className="letter"
-      key={n}
-    >
-      {c}
-    </motion.div>
-  ));
-
   return (
     <div className="home">
-      <div className="title">{string}</div>
+      <div className="title">Welcome to Japan Club!</div>
       <img className="logo" src={logo} />
+
+      {<Info />}
+
+      <BottomBar />
     </div>
   );
 }

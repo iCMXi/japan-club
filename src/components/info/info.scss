@@ -1,0 +1,44 @@
+.info {
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+  box-sizing: border-box;
+  left: 0;
+  top: 100px;
+
+  .sections {
+    text-transform: uppercase;
+    height: 100%;
+    position: absolute;
+    width: 200px;
+    overflow: hidden;
+    margin-top: 40px;
+    .section {
+      margin: 20px 5px;
+      transform: rotate(-30deg);
+      padding: 10px 15px;
+      border-radius: 20px;
+      transition: 0.3s;
+      background: green;
+      color: white;
+
+      &.selected {
+        box-shadow: var(--inset-shadow);
+      }
+    }
+  }
+
+  .details {
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border-radius: 20px 0 0 20px;
+    background: white;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    bottom: 0;
+    width: calc(100% - 100px);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}

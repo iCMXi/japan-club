@@ -10,15 +10,9 @@ function BottomBar() {
     <div className="bottom-bar">
       <div className="links">
         {settings.links.map((x, n) => (
-          <motion.div
-            initial={{ x: 20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.2 * (1 + n) }}
-            className="link"
-            key={x.id}
-          >
+          <div className="link" key={x.id}>
             {x.id}
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>
