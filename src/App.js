@@ -5,8 +5,6 @@ import Test from "./test";
 
 import Home from "./layers/home";
 
-import BottomBar from "./components/bottom_bar";
-
 import { motion } from "framer-motion";
 
 const Pages = () => {
@@ -28,8 +26,6 @@ function App() {
       <BrowserRouter>
         <Pages />
       </BrowserRouter>
-
-      <BottomBar />
     </motion.div>
   );
 }

@@ -1,6 +1,7 @@
 .home {
   .title {
     font-size: 20px;
+    width: calc(100% - 100px);
     .letter {
       display: inline-block;
       padding-right: 5px;
@@ -8,10 +9,9 @@
   }
   .logo {
     position: absolute;
-    width: 200px;
-    top: 50px;
+    width: 100px;
+    top: 0px;
     right: 0;
-    left: 0;
     margin: auto;
   }
 }
