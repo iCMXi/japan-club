@@ -1,7 +1,7 @@
 import "./test.scss";
 
 function Test() {
-  return <div className="Test">testing collab</div>;
+  return <div className="Test">testing alpha branch</div>;
 }
 
 export default Test;
