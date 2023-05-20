@@ -1,26 +1,63 @@
 .bottom-bar {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  height: 70px;
-  box-shadow: var(--shadow);
-  border-radius: 20px 20px 0 0;
-  padding: 10px;
-  box-sizing: border-box;
+  .link-card {
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 300px;
+    background: white;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
   .links {
+    position: fixed;
+    background: white;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 70px;
+    box-shadow: var(--shadow);
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    box-sizing: border-box;
+
     display: flex;
     justify-content: space-around;
     .link {
+      text-align: right;
+      text-transform: uppercase;
+      font-size: 12px;
+      width: 100px;
+      height: 30px;
       transition: 0.3s;
       background: white;
       border-radius: 10px;
       padding: 5px 10px;
       box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+
+      .social-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+      }
     }
+
     .selected-link {
-      margin-top: -20px;
+      background: green;
+      box-shadow: var(--inset-shadow);
     }
   }
 }
