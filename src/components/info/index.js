@@ -20,6 +20,7 @@ function Info() {
           <div
             className={`section ${x == section ? "selected" : ""}`}
             id={x}
+            key={x}
             onClick={() => {
               setSection(x);
             }}

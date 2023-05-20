@@ -1,16 +1,16 @@
 export default {
   links: [
     {
-      id: "youtube",
-      url: "",
-    },
-    {
       id: "instagram",
-      url: "",
+      url: " https://www.instagram.com/uafsjapanclub/",
     },
     {
       id: "numalink",
-      url: "",
+      url: "https://uafs.campuslabs.com/engage/organization/japanclub",
+    },
+    {
+      id: "youtube",
+      url: "https://www.youtube.com/channel/UCnxtyDlVQ6ykqCQJwIKrE3Q",
     },
   ],
 };
